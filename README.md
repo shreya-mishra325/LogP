@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/banner.png" alt="LogP" width="100%">
+</p>
+
 # LogP
 
 **Adaptive browser-based distributed computing.**
