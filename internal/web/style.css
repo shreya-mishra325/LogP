@@ -1,0 +1,16 @@
+:root { color-scheme: light; font: 16px/1.55 system-ui, sans-serif; color: #172431; background: #f5f6f8; }
+main { max-width: 54rem; margin: 2rem auto; padding: 1.5rem; }
+header { border-bottom: 1px solid #c5ced8; padding-bottom: 1rem; margin-bottom: 1rem; }
+h1, h2, p { margin: 0 0 .65rem; }
+a { color: #1759a0; }
+label { display: block; margin: .8rem 0; }
+input, select, button { font: inherit; padding: .35rem .6rem; border: 1px solid #8495a7; border-radius: .25rem; }
+input, select { display: block; max-width: 100%; }
+button { background: #1759a0; color: white; cursor: pointer; }
+button:disabled { background: #e2e7ed; color: #465567; cursor: default; }
+:focus-visible { outline: 3px solid #176aca; outline-offset: 2px; }
+.actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem 1rem; }
+dd, li { font-family: ui-monospace, monospace; overflow-wrap: anywhere; }
+dd { margin: 0; }
+canvas { width: min(100%, 40rem); height: auto; background: #dce3eb; border: 1px solid #8495a7; margin-bottom: 1rem; }

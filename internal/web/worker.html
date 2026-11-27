@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worker · {{.Name}}</title>
+<link rel="stylesheet" href="/style.css">
+<script type="module" src="/worker.js"></script>
+</head>
+<body><main>
+<header><h1>{{.Name}} Worker</h1><p>{{.Tagline}}</p></header>
+<p>Joining lets this tab use CPU, battery and network capacity to render Mandelbrot tiles. Switching away pauses computation until you resume. Stop ends the session immediately.</p>
+<label>Worker credential <input id="token" type="password" autocomplete="off" maxlength="512"></label>
+<label>Worker slots <select id="slots"></select></label>
+<label>Session limit in minutes <input id="minutes" type="number" min="1" max="60" step="1" value="15"></label>
+<div class="actions">
+<button id="join">Join</button><button id="pause" disabled>Pause</button>
+<button id="resume" disabled>Resume</button><button id="stop" disabled>Stop</button>
+</div>
+<p id="status" role="status">Disconnected</p>
+<dl><dt>Computing tiles</dt><dd id="active">0</dd><dt>Time remaining</dt><dd id="remaining">—</dd></dl>
+</main></body>
+</html>
